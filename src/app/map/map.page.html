@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Entrega Pedidos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+  <ion-chip>
+    <ion-icon name="pin" color="primary"></ion-icon>
+    <ion-label>Your Location</ion-label>
+  </ion-chip>
+  
+
+
+<ion-content>
+  <div id="map">
+  </div>
+
+  <ion-text>
+   <h3 class="txtConfirm"> Has recibido tu pedido? Confirmalo.</h3>
+  </ion-text>
+
+  <ion-button routerLink="/success" class="buttonOk" color="success">
+    <ion-icon name="checkmark" slot="end"></ion-icon>
+    Ok!
+  </ion-button>
+</ion-content>

@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
-import { HomePage } from './home.page';
+import { AgmCoreModule } from '@agm/core';
+import { mapPage } from './map.Page';
 
 @NgModule({
   imports: [
@@ -14,10 +14,15 @@ import { HomePage } from './home.page';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: mapPage
       }
-    ])
+    ]),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBiqUjl1gCn2A-VylI5poM-KLNjXwhlR1g',
+      libraries: ["places"],
+    })
   ],
-  declarations: [HomePage]
+  declarations: [mapPage]
 })
-export class HomePageModule {}
+
+export class mapPageModule {}

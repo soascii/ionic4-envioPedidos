@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-ripple-effect></ion-ripple-effect>
+      <ion-back-button defaultHref="form-inicial"></ion-back-button>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+   
+    <ion-text>
+      <h1 class="title">{{ passedId }}</h1>
+      <h2 class="subtitle">¿Que se te apetece hoy?</h2>
+    </ion-text>
+
+
+   
+    <ion-card>
+      <ion-card-content>
+        <img src="assets/img/pizza.png" class="img">
+        <ion-text>
+          <h1>Pizza con pepperoni</h1>
+          <h2 class="subtitleText">La re pizza</h2>
+        </ion-text>
+      </ion-card-content>
+      <ion-button fill="clear" class="btnSelect" routerLink="/map">
+          <ion-icon name="checkmark"></ion-icon>
+      </ion-button>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+         <img src="assets/img/hamburguesa.png" class="img">
+        <ion-text>
+          <h1>Hamburguesa completa</h1>
+          <h2 class="subtitleText">HamburHouse</h2>
+        </ion-text>
+        <ion-button fill="clear" class="btnSelect" routerLink="/map">
+            <ion-icon name="checkmark"></ion-icon>
+        </ion-button>
+      </ion-card-content>
+      </ion-card>
+   
+</ion-content>

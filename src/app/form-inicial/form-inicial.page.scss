@@ -1,0 +1,32 @@
+.titleForm{
+    color: gray;
+    text-transform: uppercase;
+    font-size:20px;
+}
+.cardForm{
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin-top:30%;
+}
+.imgForm{
+    width: 100%;
+    height: 100px;
+}
+.grupInput{
+  margin: 5px;
+  margin-top: 40px;
+  display: block;
+}
+.text1{
+    text-align: center;
+    margin:20px;
+    padding: 20px;
+}
+.error-messages{
+    font-size: 0.7em;
+    color:red;
+    text-align: center;
+}
